@@ -1,0 +1,2 @@
+1) API for fetching https://random-data-api.com/documentation
+2) No Redux. useState instead. useContex if required
