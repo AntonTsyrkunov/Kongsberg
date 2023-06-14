@@ -1,10 +1,13 @@
 import axios from "axios";
 
-const BASE_URL = "https://random-data-api.com/api/v2/";https://random-data-api.com/api/v2/users?size=2&is_xml=true
+const BASE_URL = "https://www.googleapis.com/books/v1";
+const API_KEY = "AIzaSyD7siH3qgQrWd6jVuDj43il8r36NIvUmEI";
 
-const getData = (subject, amount) => {
-    const data = axios.get(`${BASE_URL}/${subject}/size=${amount}&is_xml=true`);
-    return data;
+const getBooks = (query) => {
+    const response = axios.get(`${BASE_URL}/volumes?key=${API_KEY}`);
+    return response;
 };
 
-export default getData;
+export default getBooks;
+
+
