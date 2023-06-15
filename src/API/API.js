@@ -8,6 +8,26 @@ const getBooks = () => {
     return response;
 };
 
-export default getBooks;
+const getBooksByAuthor = (author) => {
+      const response = axios.get(`${BASE_URL}/volumes`, {
+        params: {
+          q: `inauthor:${author}`,
+          maxResults: 10, // Specify the maximum number of results you want to retrieve
+        },
+      });  
+      return response;
+      
+      // Process the book data as needed
+    //   books.forEach((book) => {
+    //     const title = book.volumeInfo.title;
+    //     console.log(title);
+    //   });
+   
+    }
+
+    export default {
+        getBooks,
+        getBooksByAuthor
+    };
 
 
