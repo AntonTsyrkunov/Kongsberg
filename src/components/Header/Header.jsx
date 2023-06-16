@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Header = ({onSubmit}) => {
-    consr [querry, setQuerry] = useState("");
+    const [querry, setQuerry] = useState("");
 
     const handleInputChange = (e) => {
         setQuerry(e.target.value);
@@ -27,8 +27,8 @@ const Header = ({onSubmit}) => {
             placeHolder="Search books by it's name"
             onChange={handleInputChange}
           />
+          <button type="submit">Perform search</button>
         </form>
-        <label htmlFor=""><input type="text" name="book"/></label>
     </header>
     )
 }
