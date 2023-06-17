@@ -2,7 +2,7 @@ import Modal from '../Modal/Modal';
 import Loader from '../Loader/Loader';
 import { useState } from 'react';
 
-const BooksTable = ({ books, loading, onAuthorSearch }) => {
+const BooksTable = ({ books, loading, onAuthorSearch, handleBackFromTable }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [bookdata, setBookData] = useState([]);
 
@@ -17,8 +17,11 @@ const BooksTable = ({ books, loading, onAuthorSearch }) => {
     onAuthorSearch(author);
   };
 
+  
+
   return (
     <>
+    <button type="button" onClick={() => handleBackFromTable()}></button>
       {books && books.length > 0 ? (
         loading ? (
           <Loader />
@@ -65,4 +68,4 @@ const BooksTable = ({ books, loading, onAuthorSearch }) => {
   );
 };
 
-export {BooksTable};
+export default BooksTable;

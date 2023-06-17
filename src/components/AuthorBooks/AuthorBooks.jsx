@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 
-const AuthorBooks = ({ loading, authorsBooks }) => {
+const AuthorBooks = ({ loading, authorsBooks, handleBackFromAuthor }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [bookdata, setBookData] = useState([]);
 
@@ -12,8 +12,10 @@ const AuthorBooks = ({ loading, authorsBooks }) => {
     setModalIsOpen(!modalIsOpen);
   };
 
+ 
   return (    
     <>
+    <button type="button" onClick={() => handleBackFromAuthor()}></button>
       {console.log(authorsBooks)}
       {authorsBooks.length > 0 && (
         <table>
@@ -64,4 +66,4 @@ const AuthorBooks = ({ loading, authorsBooks }) => {
   );
 };
 
-export { AuthorBooks };
+export default AuthorBooks ;
