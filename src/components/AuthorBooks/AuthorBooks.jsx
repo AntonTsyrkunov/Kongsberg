@@ -1,5 +1,4 @@
-import Modal from '../Modal/Modal';
-import Loader from '../Loader/Loader';
+
 import { useState } from 'react';
 
 const AuthorBooks = ({ loading, authorsBooks }) => {
@@ -13,8 +12,8 @@ const AuthorBooks = ({ loading, authorsBooks }) => {
     setModalIsOpen(!modalIsOpen);
   };
 
-  return (
-      <>
+  return (    
+    <>
       {console.log(authorsBooks)}
       {authorsBooks.length > 0 && (
         <table>
@@ -39,8 +38,19 @@ const AuthorBooks = ({ loading, authorsBooks }) => {
                 <td>{book.volumeInfo.publishedDate}</td>
                 <td>{book.volumeInfo.description}</td>
                 <td>{book.volumeInfo.pageCount}</td>
-                <td>{book.volumeInfo.imageLinks.thumbnail}</td>
-                <td>{book.volumeInfo.language}</td>                
+                <td>
+                {book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.smallThumbnail ? (
+                <img
+                  src={book.volumeInfo.imageLinks.smallThumbnail}
+                  alt=""
+                  width="50%"
+                  height="50%"
+                />
+              ) : (
+                <p>No thumbnail available</p>
+              )}
+                </td>
+                <td>{book.volumeInfo.language}</td>
                 <button
                   type="button"
                   onClick={() => toggleModal(book)}
@@ -51,7 +61,7 @@ const AuthorBooks = ({ loading, authorsBooks }) => {
         </table>
       )}
     </>
-  )
-}
+  );
+};
 
-export default AuthorBooks;
+export { AuthorBooks };

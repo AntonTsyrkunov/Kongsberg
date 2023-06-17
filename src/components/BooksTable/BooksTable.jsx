@@ -19,7 +19,7 @@ const BooksTable = ({ books, loading, onAuthorSearch }) => {
 
   return (
     <>
-      {books.length > 0 ? (
+      {books && books.length > 0 ? (
         loading ? (
           <Loader />
         ) : (
@@ -65,4 +65,4 @@ const BooksTable = ({ books, loading, onAuthorSearch }) => {
   );
 };
 
-export default BooksTable;
+export {BooksTable};

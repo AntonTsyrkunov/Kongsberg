@@ -33,4 +33,4 @@ const Header = ({onSubmit}) => {
     )
 }
 
-export default Header;
+export {Header};
