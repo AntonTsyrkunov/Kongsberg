@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.7acaea2f.css",
-    "main.js": "/react-homework-template/static/js/main.26076a43.js",
-    "static/css/735.04af2c07.chunk.css": "/react-homework-template/static/css/735.04af2c07.chunk.css",
-    "static/js/735.4c243fd8.chunk.js": "/react-homework-template/static/js/735.4c243fd8.chunk.js",
-    "static/css/299.04af2c07.chunk.css": "/react-homework-template/static/css/299.04af2c07.chunk.css",
-    "static/js/299.41987a69.chunk.js": "/react-homework-template/static/js/299.41987a69.chunk.js",
-    "static/css/274.04af2c07.chunk.css": "/react-homework-template/static/css/274.04af2c07.chunk.css",
-    "static/js/274.b275ab7a.chunk.js": "/react-homework-template/static/js/274.b275ab7a.chunk.js",
-    "static/js/643.1b26b339.chunk.js": "/react-homework-template/static/js/643.1b26b339.chunk.js",
-    "static/js/279.c43c94a7.chunk.js": "/react-homework-template/static/js/279.c43c94a7.chunk.js",
-    "index.html": "/react-homework-template/index.html",
-    "main.7acaea2f.css.map": "/react-homework-template/static/css/main.7acaea2f.css.map",
-    "main.26076a43.js.map": "/react-homework-template/static/js/main.26076a43.js.map",
-    "735.04af2c07.chunk.css.map": "/react-homework-template/static/css/735.04af2c07.chunk.css.map",
-    "735.4c243fd8.chunk.js.map": "/react-homework-template/static/js/735.4c243fd8.chunk.js.map",
-    "299.04af2c07.chunk.css.map": "/react-homework-template/static/css/299.04af2c07.chunk.css.map",
-    "299.41987a69.chunk.js.map": "/react-homework-template/static/js/299.41987a69.chunk.js.map",
-    "274.04af2c07.chunk.css.map": "/react-homework-template/static/css/274.04af2c07.chunk.css.map",
-    "274.b275ab7a.chunk.js.map": "/react-homework-template/static/js/274.b275ab7a.chunk.js.map",
-    "643.1b26b339.chunk.js.map": "/react-homework-template/static/js/643.1b26b339.chunk.js.map",
-    "279.c43c94a7.chunk.js.map": "/react-homework-template/static/js/279.c43c94a7.chunk.js.map"
+    "main.css": "/Kongsberg/static/css/main.7acaea2f.css",
+    "main.js": "/Kongsberg/static/js/main.c8f21d7a.js",
+    "static/css/735.04af2c07.chunk.css": "/Kongsberg/static/css/735.04af2c07.chunk.css",
+    "static/js/735.4c243fd8.chunk.js": "/Kongsberg/static/js/735.4c243fd8.chunk.js",
+    "static/css/299.04af2c07.chunk.css": "/Kongsberg/static/css/299.04af2c07.chunk.css",
+    "static/js/299.41987a69.chunk.js": "/Kongsberg/static/js/299.41987a69.chunk.js",
+    "static/css/274.04af2c07.chunk.css": "/Kongsberg/static/css/274.04af2c07.chunk.css",
+    "static/js/274.b275ab7a.chunk.js": "/Kongsberg/static/js/274.b275ab7a.chunk.js",
+    "static/js/643.e6cee778.chunk.js": "/Kongsberg/static/js/643.e6cee778.chunk.js",
+    "static/js/279.c43c94a7.chunk.js": "/Kongsberg/static/js/279.c43c94a7.chunk.js",
+    "index.html": "/Kongsberg/index.html",
+    "main.7acaea2f.css.map": "/Kongsberg/static/css/main.7acaea2f.css.map",
+    "main.c8f21d7a.js.map": "/Kongsberg/static/js/main.c8f21d7a.js.map",
+    "735.04af2c07.chunk.css.map": "/Kongsberg/static/css/735.04af2c07.chunk.css.map",
+    "735.4c243fd8.chunk.js.map": "/Kongsberg/static/js/735.4c243fd8.chunk.js.map",
+    "299.04af2c07.chunk.css.map": "/Kongsberg/static/css/299.04af2c07.chunk.css.map",
+    "299.41987a69.chunk.js.map": "/Kongsberg/static/js/299.41987a69.chunk.js.map",
+    "274.04af2c07.chunk.css.map": "/Kongsberg/static/css/274.04af2c07.chunk.css.map",
+    "274.b275ab7a.chunk.js.map": "/Kongsberg/static/js/274.b275ab7a.chunk.js.map",
+    "643.e6cee778.chunk.js.map": "/Kongsberg/static/js/643.e6cee778.chunk.js.map",
+    "279.c43c94a7.chunk.js.map": "/Kongsberg/static/js/279.c43c94a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.26076a43.js"
+    "static/js/main.c8f21d7a.js"
   ]
 }
