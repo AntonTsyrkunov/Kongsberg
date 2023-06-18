@@ -59,17 +59,22 @@ const Home = () => {
     setDisplayHomepage(true);
     setDisplayCommonTable(false);
     setBooks([]);
+    setQuerry('');
   };
 
   const handleBackFromAuthor = () => {
     setDisplayCommonTable(true);
     setDisplayAutorTable(false);
+    setAuthorName('');
     setAuthorsBooks([]);
   };
+
   return (
     <>
       <Header onSubmit={handleSearchByQuery}></Header>
-      {displayHomepage && <h1>Home</h1>}
+      {
+        displayHomepage && <p>Home</p>
+      }
       {displayCommonTable && (
         <BooksTable
           loading={loading}
@@ -79,9 +84,10 @@ const Home = () => {
         />
       )}
       {displayAuthorTable && (
-        <AuthorBooks loading={loading} 
-        authorsBooks={authorsBooks} 
-        handleBackFromAuthor={handleBackFromAuthor}
+        <AuthorBooks
+          loading={loading}
+          authorsBooks={authorsBooks}
+          handleBackFromAuthor={handleBackFromAuthor}
         />
       )}
       <Footer></Footer>

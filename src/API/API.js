@@ -7,7 +7,6 @@ export const getBooks = (title) => {
     const response = axios.get(`${BASE_URL}/volumes?q=${title}+inauthor&key=${API_KEY}`);
     return response;
 };
-// https://www.googleapis.com/books/v1/volumes?q=inauthor:"Richard+Moreno"&key=my_key
 export const getBooksByAuthor = (author) => {
       const response = axios.get(`${BASE_URL}/volumes`, {
         params: {

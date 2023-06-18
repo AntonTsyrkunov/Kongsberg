@@ -24,7 +24,7 @@ const Header = ({onSubmit}) => {
             type="text"
             autoComplete="off"
             autoFocus
-            placeHolder="Search books by it's name"
+            placeholder="Search books by it's name"
             onChange={handleInputChange}
           />
           <button type="submit">Perform search</button>
