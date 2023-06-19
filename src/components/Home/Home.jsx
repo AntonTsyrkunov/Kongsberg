@@ -31,8 +31,9 @@ const Home = () => {
     }
     const fetchData = async () => {
       setLoading(true);
+      setAuthorsBooks([]);
       const data = await getBooks(querry);
-      setBooks(prev => [...prev, ...data.data.items]);
+      setBooks(data.data.items);
       setLoading(false);
       setDisplayHomepage(false);
       setDisplayCommonTable(true);
