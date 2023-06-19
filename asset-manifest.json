@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/Kongsberg/static/css/main.7acaea2f.css",
-    "main.js": "/Kongsberg/static/js/main.c8f21d7a.js",
-    "static/css/735.04af2c07.chunk.css": "/Kongsberg/static/css/735.04af2c07.chunk.css",
-    "static/js/735.4c243fd8.chunk.js": "/Kongsberg/static/js/735.4c243fd8.chunk.js",
-    "static/css/299.04af2c07.chunk.css": "/Kongsberg/static/css/299.04af2c07.chunk.css",
-    "static/js/299.41987a69.chunk.js": "/Kongsberg/static/js/299.41987a69.chunk.js",
-    "static/css/274.04af2c07.chunk.css": "/Kongsberg/static/css/274.04af2c07.chunk.css",
-    "static/js/274.b275ab7a.chunk.js": "/Kongsberg/static/js/274.b275ab7a.chunk.js",
-    "static/js/643.e6cee778.chunk.js": "/Kongsberg/static/js/643.e6cee778.chunk.js",
-    "static/js/279.c43c94a7.chunk.js": "/Kongsberg/static/js/279.c43c94a7.chunk.js",
+    "main.css": "/Kongsberg/static/css/main.1d5053fc.css",
+    "main.js": "/Kongsberg/static/js/main.57233fa8.js",
+    "static/css/778.863d45ec.chunk.css": "/Kongsberg/static/css/778.863d45ec.chunk.css",
+    "static/js/778.342f47c0.chunk.js": "/Kongsberg/static/js/778.342f47c0.chunk.js",
+    "static/css/830.63804d19.chunk.css": "/Kongsberg/static/css/830.63804d19.chunk.css",
+    "static/js/830.ce005107.chunk.js": "/Kongsberg/static/js/830.ce005107.chunk.js",
+    "static/css/274.63804d19.chunk.css": "/Kongsberg/static/css/274.63804d19.chunk.css",
+    "static/js/274.06c978af.chunk.js": "/Kongsberg/static/js/274.06c978af.chunk.js",
+    "static/js/291.0ca21c83.chunk.js": "/Kongsberg/static/js/291.0ca21c83.chunk.js",
+    "static/js/562.a1c5f8a4.chunk.js": "/Kongsberg/static/js/562.a1c5f8a4.chunk.js",
+    "static/media/background.jpg": "/Kongsberg/static/media/background.3b2c7d3ea9a1f21e0e88.jpg",
     "index.html": "/Kongsberg/index.html",
-    "main.7acaea2f.css.map": "/Kongsberg/static/css/main.7acaea2f.css.map",
-    "main.c8f21d7a.js.map": "/Kongsberg/static/js/main.c8f21d7a.js.map",
-    "735.04af2c07.chunk.css.map": "/Kongsberg/static/css/735.04af2c07.chunk.css.map",
-    "735.4c243fd8.chunk.js.map": "/Kongsberg/static/js/735.4c243fd8.chunk.js.map",
-    "299.04af2c07.chunk.css.map": "/Kongsberg/static/css/299.04af2c07.chunk.css.map",
-    "299.41987a69.chunk.js.map": "/Kongsberg/static/js/299.41987a69.chunk.js.map",
-    "274.04af2c07.chunk.css.map": "/Kongsberg/static/css/274.04af2c07.chunk.css.map",
-    "274.b275ab7a.chunk.js.map": "/Kongsberg/static/js/274.b275ab7a.chunk.js.map",
-    "643.e6cee778.chunk.js.map": "/Kongsberg/static/js/643.e6cee778.chunk.js.map",
-    "279.c43c94a7.chunk.js.map": "/Kongsberg/static/js/279.c43c94a7.chunk.js.map"
+    "main.1d5053fc.css.map": "/Kongsberg/static/css/main.1d5053fc.css.map",
+    "main.57233fa8.js.map": "/Kongsberg/static/js/main.57233fa8.js.map",
+    "778.863d45ec.chunk.css.map": "/Kongsberg/static/css/778.863d45ec.chunk.css.map",
+    "778.342f47c0.chunk.js.map": "/Kongsberg/static/js/778.342f47c0.chunk.js.map",
+    "830.63804d19.chunk.css.map": "/Kongsberg/static/css/830.63804d19.chunk.css.map",
+    "830.ce005107.chunk.js.map": "/Kongsberg/static/js/830.ce005107.chunk.js.map",
+    "274.63804d19.chunk.css.map": "/Kongsberg/static/css/274.63804d19.chunk.css.map",
+    "274.06c978af.chunk.js.map": "/Kongsberg/static/js/274.06c978af.chunk.js.map",
+    "291.0ca21c83.chunk.js.map": "/Kongsberg/static/js/291.0ca21c83.chunk.js.map",
+    "562.a1c5f8a4.chunk.js.map": "/Kongsberg/static/js/562.a1c5f8a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.c8f21d7a.js"
+    "static/css/main.1d5053fc.css",
+    "static/js/main.57233fa8.js"
   ]
 }
