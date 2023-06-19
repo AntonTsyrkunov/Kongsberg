@@ -114,7 +114,7 @@ const BooksTable = ({
           <div>
             {bookdata.volumeInfo.imageLinks &&
             bookdata.volumeInfo.imageLinks.smallThumbnail ? (
-              <img src={bookdata.volumeInfo.imageLinks.smallThumbnail} alt="" />
+              <img src={bookdata.volumeInfo.imageLinks.smallThumbnail} alt="Cover" />
             ) : (
               <p>No thumbnail available</p>
             )}

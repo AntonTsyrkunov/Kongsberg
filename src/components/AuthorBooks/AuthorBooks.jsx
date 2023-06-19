@@ -120,7 +120,7 @@ const AuthorBooks = ({
             bookdata.volumeInfo.imageLinks.smallThumbnail ? (
               <img
                 src={bookdata.volumeInfo.imageLinks.smallThumbnail}
-                alt="Cover Image"
+                alt="Cover"
                 width="50%"
                 height="50%"
               />
