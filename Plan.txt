@@ -1,8 +1,0 @@
-1) API for fetching https://random-data-api.com/documentation
-2) No Redux. useState instead. useContex if required
-3) By booknsme perform search 
-4) render results into a table
-5) Highlight row 
-6) By hover on certain raw show modal with nessesary books information 
-7) By hover to autors field show hint 'display all books' of author
-8) By clicking to author field make a request for authors books and display it
