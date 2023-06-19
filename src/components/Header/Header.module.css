@@ -1,0 +1,17 @@
+@media (max-width: 380px) {
+    .placeholder_normal::placeholder {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 380px) and (max-width: 575.98) {
+    .placeholder_normal::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .placeholder_normal::placeholder {
+      font-size: 16px;
+    }
+  }

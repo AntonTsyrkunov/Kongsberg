@@ -1,7 +1,6 @@
 import BooksTable from '../BooksTable/BooksTable';
 import AuthorBooks from '../AuthorBooks/AuthorBooks';
 import { Header } from '../Header/Header';
-import { Footer } from '../Footer/Footer';
 import css from './Home.module.css'
 
 import { useState, useEffect } from 'react';
@@ -106,7 +105,6 @@ const Home = () => {
           handleBackHomeFromAuthor={handleBackHomeFromAuthor}
         />
       )}
-      <Footer></Footer>
     </div>
   );
 };

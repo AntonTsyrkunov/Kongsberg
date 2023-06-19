@@ -1,7 +1,6 @@
 import { useState } from "react";
-
 import { Form, FormControl, Button, Container, Row, Col } from 'react-bootstrap';
-
+import css from '../Header/Header.module.css'
 
 const Header = ({onSubmit}) => {
     const [querry, setQuerry] = useState("");
@@ -19,10 +18,8 @@ const Header = ({onSubmit}) => {
       return (
         <header className="header">
           <Container style={{ padding: '20px' }}>
-            <Row className="align-items-center">
-              <Col xs={12} sm={6} md={4} lg={3}>
-              </Col>
-              <Col xs={12} sm={6} md={8} lg={9}>
+            <Row className="align-items-center justify-content-center">              
+              <Col xs={10} sm={6} md={8} lg={9}>
                 <Form onSubmit={handleSearch}>
                   <Form.Group controlId="formSearch">
                     <Row className="align-items-center">
@@ -33,7 +30,8 @@ const Header = ({onSubmit}) => {
                           type="text"
                           autoComplete="off"
                           autoFocus
-                          placeholder="Search books by its name"
+                          placeholder="Enter your query"
+                          className={css.placeholder_normal}
                           onChange={handleInputChange}
                         />
                       </Col>
