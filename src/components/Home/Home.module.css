@@ -1,0 +1,29 @@
+.background_image {
+    background-image: url(../../background/background.jpg);
+    min-height: 100vb;
+    min-width: 100vh;
+    background-size: cover;
+}
+
+.centered_text {
+    text-align: center;
+    
+  }
+  
+  .pulsating_text {
+    color: rgba(43, 55, 226, 0.8);
+    font-size: 42px;
+    animation: pulsate 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulsate {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }

@@ -23,7 +23,7 @@ const Modal = ({ toggleModal, children, bookdata}) => {
 
   return createPortal(
     <div className={css.Overlay} onClick={handleBackdropClick}>
-      <div className={css.Modal}>
+      <div className={`${css.Modal} ${css.modal_container}`} >
         {children}
       </div>
     </div>,

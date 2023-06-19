@@ -1,6 +1,9 @@
 import Modal from '../Modal/Modal';
 import Loader from '../Loader/Loader';
 import { useState } from 'react';
+import css from '../Modal/styles.module.css'
+
+import { Button, Table } from 'react-bootstrap';
 
 const BooksTable = ({
   books,
@@ -9,7 +12,7 @@ const BooksTable = ({
   handleBackFromTable,
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [bookdata, setBookData] = useState([]);
+  const [bookdata, setBookData] = useState([]);  
 
   const toggleModal = book => {
     if (bookdata.length === 0) {
@@ -27,18 +30,18 @@ const BooksTable = ({
   return (
     <>
       <div>
-        <button type="button" onClick={() => handleBackFromTable()}>
+        <Button variant="link" onClick={() => handleBackFromTable()}>
           Home
-        </button>
-        {'>Searched books'}
+        </Button>
+        {' > Searched books'}
       </div>
 
       {books && books.length > 0 ? (
         loading ? (
           <Loader />
         ) : (
-          <table>
-            <thead>
+          <Table striped bordered hover responsive>
+            <thead className="text-center">
               <tr>
                 <th>Book's ID</th>
                 <th>Title</th>
@@ -47,24 +50,34 @@ const BooksTable = ({
                 <th>Cover</th>
                 <th>Date of publishing</th>
                 <th>Language</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
-              {books.map(book => (
-                <tr key={book.id}>
-                  <td>{book.id}</td>
-                  <td>{book.volumeInfo.title}</td>
-                  <td>{book.volumeInfo.subtitle}</td>
-                  <td>
-                    <button
-                      type="button"
+              {books.map((book, index) => (
+                <tr
+                  key={book.id}                  
+                >
+                  <td className="text-center">{book.id}</td>
+                  <td className="text-center">{book.volumeInfo.title}</td>
+                  <td className="text-center">
+                    {book.volumeInfo.subtitle ? (
+                      book.volumeInfo.subtitle
+                    ) : ('No subtitle'
+                    )}
+                  </td>
+                  <td className="text-center">
+                    {book.volumeInfo.authors ? (<Button
+                      variant="link"
                       onClick={() => getAuthorBooks(book.volumeInfo.authors)}
                     >
                       {book.volumeInfo.authors}
-                      
-                    </button>
+                    </Button>) : ('Not mentioned')
+
+                    }
+                    
                   </td>
-                  <td>
+                  <td className="text-center">
                     {book.volumeInfo.imageLinks &&
                     book.volumeInfo.imageLinks.smallThumbnail ? (
                       <img
@@ -77,28 +90,27 @@ const BooksTable = ({
                       <p>No thumbnail available</p>
                     )}
                   </td>
-                  <td>{book.volumeInfo.publishedDate}</td>
-                  <td>{book.volumeInfo.language}</td>
-                  <td>
-                    <button
-                      type="button"
-                      onClick={() => toggleModal(book)}
-                    >
-                      {"Press to learn info"}
-                    </button>
+                  <td className="text-center">
+                    {book.volumeInfo.publishedDate}
+                  </td>
+                  <td className="text-center">{book.volumeInfo.language}</td>
+                  <td className="text-center">
+                    <Button variant="link" onClick={() => toggleModal(book)}>
+                      Expanded view
+                    </Button>
                   </td>
                 </tr>
               ))}
             </tbody>
-          </table>
+          </Table>
         )
       ) : null}
       {modalIsOpen && (
-        <Modal toggleModal={toggleModal} bookdata={bookdata}>
-          <p>{bookdata.id}</p>
-          <p>{bookdata.volumeInfo.title}</p>
-          <p>{bookdata.volumeInfo.subtitle}</p>
-          <p>{bookdata.volumeInfo.authors}</p>
+        <Modal toggleModal={toggleModal} bookdata={bookdata} className={css.modal_container}>
+          <p>Book ID: {bookdata.id}</p>
+          <p>Book title: {bookdata.volumeInfo.title}</p>
+          <p>Book subtitle: {bookdata.volumeInfo.subtitle}</p>
+          <p>Book autors: {bookdata.volumeInfo.authors}</p>
           <div>
             {bookdata.volumeInfo.imageLinks &&
             bookdata.volumeInfo.imageLinks.smallThumbnail ? (
@@ -107,9 +119,8 @@ const BooksTable = ({
               <p>No thumbnail available</p>
             )}
           </div>
-
-          <p>{bookdata.volumeInfo.publishedDate}</p>
-          <p>{bookdata.volumeInfo.language}</p>
+          <p>Published date: {bookdata.volumeInfo.publishedDate}</p>
+          <p>Language: {bookdata.volumeInfo.language}</p>
         </Modal>
       )}
     </>

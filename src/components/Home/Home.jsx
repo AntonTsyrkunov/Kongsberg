@@ -2,6 +2,7 @@ import BooksTable from '../BooksTable/BooksTable';
 import AuthorBooks from '../AuthorBooks/AuthorBooks';
 import { Header } from '../Header/Header';
 import { Footer } from '../Footer/Footer';
+import css from './Home.module.css'
 
 import { useState, useEffect } from 'react';
 
@@ -69,12 +70,26 @@ const Home = () => {
     setAuthorsBooks([]);
   };
 
+  const handleBackHomeFromAuthor = () => {
+    setDisplayHomepage(true);
+    setDisplayCommonTable(false);
+    setDisplayAutorTable(false);
+    setAuthorName('');
+    setAuthorsBooks([]);
+    setBooks([]);
+    setQuerry('');
+  };
+
   return (
-    <>
+    <div className={css.background_image}>
       <Header onSubmit={handleSearchByQuery}></Header>
-      {
-        displayHomepage && <p>Home</p>
-      }
+      {displayHomepage && (
+        <p className={`${css.centered_text} ${css.pulsating_text}`}>
+          Welcome!
+          <br />
+          Please enter the name of the book or keyword for search
+        </p>
+      )}
       {displayCommonTable && (
         <BooksTable
           loading={loading}
@@ -88,10 +103,11 @@ const Home = () => {
           loading={loading}
           authorsBooks={authorsBooks}
           handleBackFromAuthor={handleBackFromAuthor}
+          handleBackHomeFromAuthor={handleBackHomeFromAuthor}
         />
       )}
       <Footer></Footer>
-    </>
+    </div>
   );
 };
 
